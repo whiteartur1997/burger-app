@@ -1,7 +1,8 @@
+import { IngredientsName } from "../../BurgerBuilder";
 import classes from "./BurgerIngredient.module.css";
 
 type BurgerIngridientsPropsType = {
-  type: "meat" | "cheese" | "salad" | "bacon" | "bread-bottom" | "bread-top"
+  type: IngredientsName | "bread-bottom" | "bread-top"
 }
 
 export const BurgerIngredient: React.FC<BurgerIngridientsPropsType> = (props) => {
